@@ -12,7 +12,7 @@ let data = [
 	{
 		title: 'Sydney Opera',
 		location: 'Australia',
-		googleMapsUrl: 'https://goo.gl/maps/1DGM5WrWnATgkSNB8',
+		googleMapsUrl: 'https://goo.gl/maps/k3WYLtMy68pQSoQm9',
 		startDate: '27 May, 2022',
 		endDate: '08 June, 2022',
 		description:
@@ -23,7 +23,7 @@ let data = [
 	{
 		title: 'Geirangerfjord',
 		location: 'Norway',
-		googleMapsUrl: 'https://goo.gl/maps/1DGM5WrWnATgkSNB8',
+		googleMapsUrl: 'https://goo.gl/maps/JpUbVx4sR9TKHcVM6',
 		startDate: '10 Oct, 2022',
 		endDate: '18 Nov, 2022',
 		description:
