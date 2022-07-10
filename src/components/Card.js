@@ -1,39 +1,42 @@
 export default function Card(props) {
 	return (
 		<div className='card-main'>
-			<div className='card'>
-				<div className='card card-img'>
-					<img
-						src={props.imageUrl}
-						alt={props.title}
-						height={160}
-						width={140}
-					/>
-				</div>
-			</div>
+			<section className='card'>
+				<img
+					className='card card-img'
+					src={props.imageUrl}
+					alt={props.title}
+					height={160}
+					width={140}
+				/>
+			</section>
 
-			<div className='card-location'>
-				<h4>Japan</h4>
-				<p>
-					<a href={props.googleMapsUrl}>View on Google maps</a>
+			<section className='card-details'>
+				<p className='card-details card-location'>
+					<span>{props.location}</span>
+					<span>
+						<a
+							className='card-location-link'
+							href={props.googleMapsUrl}
+							alt={props.title}
+						>
+							Link to Google maps
+						</a>
+					</span>
 				</p>
-			</div>
 
-			<div className='card-details'>
-				<div className='card-details card-information'>
+				<p className='card-details card-information'>
 					<h1>{props.title}</h1>
-				</div>
+				</p>
 
-				<div className='card-details card-dates'>
-					<p>
-						{props.startDate} - {props.endDate}
-					</p>
-				</div>
+				<p className='card-details card-dates'>
+					{props.startDate} - {props.endDate}
+				</p>
 
-				<div className='card-details card-desc'>
+				<p className='card-details card-desc'>
 					<p>{props.description}</p>
-				</div>
-			</div>
+				</p>
+			</section>
 		</div>
 	);
 }
