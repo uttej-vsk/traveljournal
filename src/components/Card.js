@@ -1,3 +1,5 @@
+import logo from '../Fill219.png';
+
 export default function Card(props) {
 	return (
 		<div className='card-main'>
@@ -13,6 +15,13 @@ export default function Card(props) {
 
 			<section className='card-details'>
 				<p className='card-details card-location'>
+					<span>
+						<img
+							className='card-location-img'
+							src={logo}
+							alt='tag'
+						></img>
+					</span>
 					<span>{props.location}</span>
 					<span>
 						<a
